@@ -1,0 +1,16 @@
+BUILD IN CODEMAGIC
+
+1. Keep this exact folder structure when pushing to GitLab:
+   GO_ON_WAY/
+     codemagic.yaml
+     customer_app/
+     driver_app/
+
+2. Connect the GitLab repository to Codemagic.
+3. Codemagic reads codemagic.yaml from the repository root.
+4. Run either workflow:
+   - customer-apk
+   - driver-apk
+5. Download the generated APK artifact.
+
+DO NOT upload all extracted files into one flat GitLab folder. The customer_app and driver_app directories must remain intact.
